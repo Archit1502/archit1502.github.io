@@ -1,0 +1,644 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.liner {
+    display: flex;
+    margin: 50px 6%;
+}
+
+.imgdiv {
+    /* z-index: -1; */
+    padding: 5px;
+    /* border: 2px solid rgb(83, 26, 26); */
+    display: inline-block;
+    align-self: center;
+    /* if i apply above both and do not apply below. then also works */
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.space {
+    width: 400px;
+    /* height: 10px; */
+    /* border: 2px solid palevioletred; */
+}
+
+.hemlo {
+    /* z-index: -1; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    align-content: center;
+    text-align: left;
+}
+
+.rot {
+    width: 287px;
+    padding: 2px;
+    /* transform: rotate(360deg); */
+    animation-name: naam;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(0 0%, 0.92 88.53%, 1 100%);
+    ;
+}
+
+.stb {
+    /* width: 248.5px;
+    position: absolute;
+    top: 24.1px;
+    left: 26.1px; */
+    width: 223.5px;
+    position: absolute;
+    top: 35.3px;
+    left: 39px;
+}
+
+@keyframes naam {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.introlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+    /* padding-left: 25px; */
+}
+
+.introlink div {
+    padding: 1px 15px;
+    margin: 2.5px;
+    /* border: 1px solid rgb(252, 255, 178); */
+    /* border-radius: 8px; */
+}
+
+.introlink a {
+    font-family: "Titillium Web", sans-serif;
+    font-size: x-large;
+    /* text-decoration: none; */
+    /* text-decoration: underline 1px solid antiquewhite; */
+    /* color: antiquewhite; */
+    display: block;
+}
+
+.intromail {
+    /* text-decoration: underline 1px solid antiquewhite; */
+    text-decoration: none;
+    color: beige;
+    opacity: 0;
+
+    animation-name: intro2;
+    animation-duration: 2.4s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.introresume {
+    /* text-decoration: underline 1px solid antiquewhite; */
+    text-decoration: none;
+    color: beige;
+    opacity: 0;
+
+    animation-name: intro2;
+    animation-duration: 2.4s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes intro2 {
+    from {}
+
+    to {
+        /* color: beige; */
+        opacity: 1;
+    }
+}
+
+.hovereffect2 :hover {
+    /* color: black;
+    background-color: rgb(236,240,241); */
+    /* font-weight: 500; */
+    /* font-size: x-large; */
+    transform: scale(1.05);
+    text-shadow: 0 0 6px rgba(250, 235, 215, 0.686);
+    text-decoration: 1.5px underline;
+}
+
+.content {
+    /* display: inline-block; */
+    padding: 15px;
+    padding-left: 25px;
+    padding-bottom: 12px;
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+    /* border: 2px solid aqua; */
+    /* font-family: "VT323", monospace; */
+    font-family: "Titillium Web", sans-serif;
+    font-size: x-large;
+    animation-name: intro;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes intro {
+    from {
+        color: black;
+        background-color: black;
+        /* transform: rotateX(270deg); */
+        opacity: 0;
+    }
+
+    to {
+        color: beige;
+        background-color: rgb(0, 0, 0);
+        opacity: 1;
+        /* transform: rotateX(360deg); */
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------Welcome Tagline------------------------------------------------------- */
+
+.tagline {
+    color: bisque;
+    font-size: 550%;
+    font-weight: 450;
+    margin: 17% 8%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+    text-align: left;
+    padding: 15px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+/* -----------------------------------------horizontal moving text-------------------------------------------------------------------- */
+
+.horizontaltext {
+    position: relative;
+    /* margin: 50px 0; */
+    margin: 20% 0;
+    margin-bottom: 10%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lines {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    color: bisque;
+    font-size: 65px;
+    font-weight: 650;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    /* Prevent lines from wrapping */
+    padding: 16px 20px;
+    /* Adjust spacing */
+    opacity: 1;
+    /* Optional: Adjust opacity */
+    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------NAVBAR---------------------------- */
+
+html {
+    /* To achieve smooth scrolling when navigating using the navbar */
+    scroll-behavior: smooth;
+}
+
+
+#completehead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    /* position: sticky; */
+    /* border: 2px solid seagreen; */
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px) brightness(0.65);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* backdrop-filter: blur(15px); */
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    /* This places the divs at opposite ends */
+    margin: 10px 25px;
+    margin-top: 25px;
+    height: 52px;
+    /* width: 80%;  Adjust as needed */
+    /* margin: 20px auto; */
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+}
+
+.left-div {
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    /* background-color: rgb(6, 0, 84); */
+    color: bisque;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.right-div {
+    /* background-color: rgb(161, 221, 255); */
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* width: 300px; */
+    /* margin: 20px auto; */
+    padding: 0px 24px;
+    padding-top: 10px;
+    overflow: visible;
+    /* border: 1px solid #ccc; */
+}
+
+.date {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.time {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 25px;
+}
+
+
+
+.navbar2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+}
+
+.navbar2 ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar2 ul li {
+    list-style: none;
+    padding: 7px 15px;
+    /* border: 1px solid purple; */
+}
+
+.navbar2 ul li a {
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: block;
+    /* padding: 7px 18px; */
+    color: antiquewhite;
+    margin: 1px;
+    /* border: 1px solid yellow; */
+    /* transition: font-weight 0.3s ease; */
+    transition: font-weight 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.hovereffect :hover {
+    /* color: black;
+    background-color: rgb(236,240,241); */
+    /* font-weight: 500; */
+    /* font-size: x-large; */
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(250, 235, 215, 0.716);
+    text-decoration: underline;
+}
+
+#nav-introduction{
+    height: 0.5px;
+    margin-bottom: 125px;
+}
+
+#nav-education{
+    height: 0px;
+    display: flex;
+    /* margin: 7%; */
+    /* margin-top: 1%; */
+}
+
+#nav-experience{
+    height: 1px;
+    margin-top: 8%;
+}
+
+#nav-course{
+    height: 1px;
+    margin-top: 8%;
+}
+
+#nav-projects{
+    height: 1px;
+    margin-top: 8%;
+}
+
+#nav-connect{
+    height: 1px;
+    margin-top: 8%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+.containers {
+    margin-left: 14%;
+    margin-right: 4%;
+}
+
+.headings {
+    color: bisque;
+    /* font-size: xxx-large; */
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 5px;
+    padding-left: 0px;
+    margin: 10px;
+    /* margin-top: 28%; */
+    margin-top: 20%;
+    margin-bottom: 25px;
+    margin-left: 0px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------education----------------------------------------------------- */
+.listcontainer {
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 50px;
+
+}
+
+
+#inlistcontainer {
+    text-align: left;
+    background-color: rgb(255, 255, 249);
+    color: black;
+    /* font-size: large; */
+    font-family: "Titillium Web", sans-serif;
+    width: 80%;
+    /* margin: 10px; */
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.list-item-style {
+    /* font-family: "Josefin Sans", sans-serif; */
+    margin: 20px;
+    margin-left: 10px;
+    /* font-weight: 700; */
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.list-subitem-style {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------experiences------------------------------------------------- */
+.expinfo {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    font-weight: 600;
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------table------------------------------------------ */
+
+
+.tablecontainer {
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 50px;
+}
+
+.intablecontainer {
+    text-align: center;
+    background-color: rgb(255, 255, 249);
+    color: black;
+    /* margin: 145px 15%; */
+    padding: 3px;
+    width: 85%;
+    /* display: block; */
+    border-radius: 4px;
+}
+
+
+.table-items {
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* border-radius: 6px; */
+    margin: 0px;
+}
+
+.table-items td {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    padding: 12px;
+}
+
+.table-items th {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(255, 250, 248);
+    background-color: rgb(0, 0, 0);
+}
+
+.table-items tr:nth-child(even) {
+    background-color: rgb(199, 243, 221);
+    /* background-color: beige; */
+    /* background-color: rgb(240, 240, 221); */
+}
+
+.table-items tr:nth-child(odd) {
+    background-color: rgb(199, 217, 255);
+    /* background-color: rgb(238, 230, 221); */
+}
+
+.table-items tr:hover {
+    /* background-color: rgb(212, 212, 212); */
+    background-color: beige;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------Final------------------------------------------------------- */
+.container3 {
+    display: flex;
+    color: bisque;
+    /* font-size: xxx-large; */
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 15px;
+    margin-right: 8%;
+    margin-top: 16%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+}
+
+.lets-connect {
+    width: 45%;
+    font-size: 263%;
+    /* border: 1px solid lavender; */
+}
+
+.space2 {
+    width: 14%;
+    /* border: 1px solid seagreen; */
+}
+
+.reach-me {
+    width: 25%;
+    /* border: 1px solid salmon; */
+    align-content: end;
+    text-align: left;
+    font-family: "Titillium Web", sans-serif;
+    font-size: x-large;
+}
+
+.my-mail-button{
+    margin: 30px 0;
+    margin-top: 25px;
+}
+
+.mymail {
+    /* display: block; */
+    display: flex;
+    padding: 8px 4px;
+    border: 1px solid bisque;
+    border-radius: 9px;
+    /* margin: 10px; */
+    /* margin: 30px 0; */
+    /* margin-top: 25px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: bisque;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hovermymail :hover {
+    background-color: rgba(255, 226, 191, 0.964);
+    color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------Footer----------------------------------------------------------- */
+.myfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 8px;
+    padding-top: 20px;
+    border-top: 1.5px solid antiquewhite;
+}
+
+.bye-footer {
+    /* border: 1px solid peachpuff; */
+    display: flex;
+    flex-direction: column;
+    color: bisque;
+}
+
+.created-by {
+    font-family: "Titillium Web", sans-serif;
+    font-size: larger;
+}
+
+.tech-stack {
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-hr-image {
+    padding: 0 2px;
+    padding-left: 7px;
+}
+
+.linkedin-footer {
+    /* border: 1px solid paleturquoise; */
+    padding: 5px;
+    margin: 3px;
+    color: bisque;
+    font-size: xx-large;
+    font-weight: 350;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.linkedin-footer a {
+    display: block;
+    text-decoration: none;
+    color: bisque;
+    transition: 1sec linear;
+    font-size: xx-large;
+    font-weight: 350;
+}
+
+.linkedin-footer :hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 5px rgba(250, 235, 215, 0.716);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
